@@ -18,20 +18,6 @@ public class SearchBaseTest {
     @Parameters({"browserType"})
     @BeforeMethod
     public void beforeTest(@Optional("chrome") String browserType) {
-        /*if ("firefox".equals(browserType.toLowerCase())) {
-            WebDriverManager.firefoxdriver().setup();
-            webDriver = new FirefoxDriver();
-
-        } else if ("chrome".equals(browserType.toLowerCase())) {
-            WebDriverManager.chromedriver().setup();
-            webDriver = new ChromeDriver();
-
-        }
-
-        webDriver.navigate().to("https://www.google.com/");
-        googleMainPage = new GoogleMainPage(webDriver);
-
-    }*/
         switch (browserType.toLowerCase()){
             case "firefox" :
                 WebDriverManager.firefoxdriver().setup();

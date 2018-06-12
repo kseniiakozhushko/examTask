@@ -2,7 +2,6 @@ package test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.GoogleMainPage;
 import page.SearchResultsPage;
 import page.SecondSearchResultsPage;
 
